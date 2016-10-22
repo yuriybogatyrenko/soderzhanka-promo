@@ -69,14 +69,44 @@
 .field--descr
     line-height: 36px
 
-.form-box input.short-input
-    width: 130px
-    margin-right: 10px
+.form-box
+    &.no-lips
+        background-image: none
+
+    input.short-input
+        width: 130px
+        margin-right: 10px
     
     
 input[type="radio"]:checked 
     & + .radio-button-detector
         background: #b263b8
+
+
+.photo-drop-area
+    position: relative
+    height: 240px
+
+    .photo-drop-area__file-preview
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+
+        img
+            width: 100%
+
+    #inp-file
+        position: absolute
+        opacity: 0
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 50
+        height: auto
+        width: auto
 
 
 @media screen and (max-width: 468px)
