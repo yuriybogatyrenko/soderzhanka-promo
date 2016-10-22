@@ -1,0 +1,90 @@
+.block-title
+    font: normal 22px "TruthCYR-R", Arial
+    color: #b263b8
+    text-align: center
+    padding: 10px 0
+    margin: 0
+
+.block-title__descr
+    font: normal 22px "TruthCYR-R", Arial
+    object-fit: contain
+    font-size: 16px
+    line-height: 1.38
+    text-align: center
+    color: #b263b8
+
+.form-box
+    textarea
+        font: normal 16px "TruthCYR", Arial
+        color: #484848
+        padding: 8px 10px
+        border: 1px solid #9e9e9e
+        width: 100%
+        box-sizing: border-box
+        outline: none
+        border-radius: 0
+        height: 120px
+        max-width: 100%
+        min-width: 100%
+
+.form-section
+    border-bottom: 1px solid #dadada
+    padding: 10px 0
+
+.hidden
+    display: none
+
+.radio-button-detector
+    background: #a7a7a7
+    border-radius: 3px
+    color: #fff
+    font-size: 15px
+    line-height: 38px
+    padding: 0 15px
+    margin-right: 5px
+    display: inline-block
+    
+.tal
+    text-align: left
+
+.form-line
+    display: flex
+    justify-content: space-between
+
+.form-field__caption
+    min-width: 180px
+    padding-top: 10px
+    font-size: 16px
+
+.form-field
+    width: 80%
+
+.dflex
+    display: flex
+    justify-content: flex-start
+
+.align-center
+    align-items: center
+
+.field--descr
+    line-height: 36px
+
+.form-box input.short-input
+    width: 130px
+    margin-right: 10px
+    
+    
+input[type="radio"]:checked 
+    & + .radio-button-detector
+        background: #b263b8
+
+
+@media screen and (max-width: 468px)
+    .form-line
+        display: block
+
+    .form-field__caption
+        margin-bottom: 10px
+
+    .form-field
+        width: 100%
