@@ -82,10 +82,23 @@ input[type="radio"]:checked
     & + .radio-button-detector
         background: #b263b8
 
+.image-preview
+    max-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+
+.purple-text
+    color: #9e4fa6
+    text-decoration: underline
 
 .photo-drop-area
+    background: #f8f9fe
+    padding: 80px 20px
+    border-radius: 5px
+    border: 2px dashed #808080
     position: relative
-    height: 240px
+    overflow: hidden
 
     .photo-drop-area__file-preview
         position: absolute
@@ -93,20 +106,72 @@ input[type="radio"]:checked
         right: 0
         left: 0
         bottom: 0
+        background: #fff
+        z-index: 60
 
-        img
-            width: 100%
+        &:after
+            transition: all 0.3s ease
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            right: 0
+            background: rgba(#000, 0.4)
+            opacity: 0
+            left: 0
+            bottom: 0
 
-    #inp-file
+        &:hover
+            &:after
+                opacity: 1
+
+            .delete-preview__icon
+                opacity: 1
+    
+    .delete-preview__icon
+        background: rgba(#000, 0.5) url(../i/icon-trash.png) no-repeat center center
+        background-size: 17px auto
+        width: 44px
+        height: 44px
+        border-radius: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -22px
+        margin-top: -22px
+        z-index: 61
+        cursor: pointer
+        opacity: 0
+        transition: all 0.3s ease
+
+    #inp-file, .file-input-js
         position: absolute
         opacity: 0
         top: 0
         left: 0
-        right: 0
-        bottom: 0
         z-index: 50
-        height: auto
-        width: auto
+        height: 100%
+        width: 100%
+        cursor: pointer
+
+.photo-icon
+    display: inline-block
+    vertical-align: middle
+    width: 31px
+    height: 24px
+    background: url(../i/icon-photo.png) no-repeat center center
+    background-size: contain
+    margin-bottom: 24px
+
+.upload-photo-big-text
+    font-size: 18px
+    color: #333333
+    margin: 0 0 10px
+    
+.upload-photo-small-text
+    color: #333
+    font-size: 16px
+    margin: 0
 
 
 @media screen and (max-width: 468px)

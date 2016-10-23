@@ -27,6 +27,8 @@
     <![endif]-->
 
     <script src="http://zolushka-promo.ru/js/custom.js"></script>
+
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -144,17 +146,18 @@
             <h3>Заявки без фото не рассматриваются</h3>
 
             <div class="photo-drop-area">
-                <p><i class="photo-icon"></i></p>
+                <i class="photo-icon"></i>
                 <p class="upload-photo-big-text">Загрузить фотографию</p>
                 <p class="upload-photo-small-text">
                     Перетащить сюда или
                     <span class="purple-text underlined">выбрать</span>
                 </p>
 
-                <input type="file" name="photo" id="inp-file">
+                <input type="file" class="file-input-js" name="photo" id="inp-file2">
                 
                 <div class="photo-drop-area__file-preview">
                     <img src="" class="image-preview" style="display: none;" alt="" id="filepreview">
+                    <i class="delete-preview__icon"></i>
                 </div>
             </div>
             <div class="fld fld-submit"><input type="submit" value="Продолжить" name="submit"></div>
