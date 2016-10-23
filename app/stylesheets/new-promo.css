@@ -141,8 +141,9 @@ input[type="radio"]:checked + .radio-button-detector {
   bottom: 0;
   background: #fff;
   z-index: 60;
+  display: none;
 }
-/* line 112, ../sass/new-promo.sass */
+/* line 113, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:after {
   transition: all 0.3s ease;
   content: "";
@@ -155,15 +156,15 @@ input[type="radio"]:checked + .radio-button-detector {
   left: 0;
   bottom: 0;
 }
-/* line 125, ../sass/new-promo.sass */
+/* line 126, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:hover:after {
   opacity: 1;
 }
-/* line 128, ../sass/new-promo.sass */
+/* line 129, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:hover .delete-preview__icon {
   opacity: 1;
 }
-/* line 131, ../sass/new-promo.sass */
+/* line 132, ../sass/new-promo.sass */
 .photo-drop-area .delete-preview__icon {
   background: rgba(0, 0, 0, 0.5) url(../i/icon-trash.png) no-repeat center center;
   background-size: 17px auto;
@@ -180,7 +181,7 @@ input[type="radio"]:checked + .radio-button-detector {
   opacity: 0;
   transition: all 0.3s ease;
 }
-/* line 147, ../sass/new-promo.sass */
+/* line 148, ../sass/new-promo.sass */
 .photo-drop-area #inp-file, .photo-drop-area .file-input-js {
   position: absolute;
   opacity: 0;
@@ -192,7 +193,7 @@ input[type="radio"]:checked + .radio-button-detector {
   cursor: pointer;
 }
 
-/* line 157, ../sass/new-promo.sass */
+/* line 158, ../sass/new-promo.sass */
 .photo-icon {
   display: inline-block;
   vertical-align: middle;
@@ -203,14 +204,14 @@ input[type="radio"]:checked + .radio-button-detector {
   margin-bottom: 24px;
 }
 
-/* line 166, ../sass/new-promo.sass */
+/* line 167, ../sass/new-promo.sass */
 .upload-photo-big-text {
   font-size: 18px;
   color: #333333;
   margin: 0 0 10px;
 }
 
-/* line 171, ../sass/new-promo.sass */
+/* line 172, ../sass/new-promo.sass */
 .upload-photo-small-text {
   color: #333;
   font-size: 16px;
@@ -218,17 +219,17 @@ input[type="radio"]:checked + .radio-button-detector {
 }
 
 @media screen and (max-width: 468px) {
-  /* line 178, ../sass/new-promo.sass */
+  /* line 179, ../sass/new-promo.sass */
   .form-line {
     display: block;
   }
 
-  /* line 181, ../sass/new-promo.sass */
+  /* line 182, ../sass/new-promo.sass */
   .form-field__caption {
     margin-bottom: 10px;
   }
 
-  /* line 184, ../sass/new-promo.sass */
+  /* line 185, ../sass/new-promo.sass */
   .form-field {
     width: 100%;
   }
