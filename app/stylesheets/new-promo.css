@@ -51,7 +51,7 @@
   font-size: 15px;
   line-height: 38px;
   padding: 0 15px;
-  margin-right: 5px;
+  margin: 3px 5px 3px 0;
   display: inline-block;
 }
 
@@ -104,12 +104,19 @@
   margin-right: 10px;
 }
 
-/* line 82, ../sass/new-promo.sass */
+/* line 81, ../sass/new-promo.sass */
+.form-box input[type="text"]:focus, .form-box input[type="email"]:focus, textarea:focus, .custom-select select:focus {
+  border: 1px solid #b263b8;
+  box-shadow: 0 0 6px 0 rgba(178, 99, 184, 0.5);
+  outline: none;
+}
+
+/* line 88, ../sass/new-promo.sass */
 input[type="radio"]:checked + .radio-button-detector {
   background: #b263b8;
 }
 
-/* line 85, ../sass/new-promo.sass */
+/* line 91, ../sass/new-promo.sass */
 .image-preview {
   max-width: 100%;
   max-height: 100%;
@@ -117,13 +124,13 @@ input[type="radio"]:checked + .radio-button-detector {
   height: auto;
 }
 
-/* line 91, ../sass/new-promo.sass */
+/* line 97, ../sass/new-promo.sass */
 .purple-text {
   color: #9e4fa6;
   text-decoration: underline;
 }
 
-/* line 95, ../sass/new-promo.sass */
+/* line 101, ../sass/new-promo.sass */
 .photo-drop-area {
   background: #f8f9fe;
   padding: 80px 20px;
@@ -132,7 +139,7 @@ input[type="radio"]:checked + .radio-button-detector {
   position: relative;
   overflow: hidden;
 }
-/* line 103, ../sass/new-promo.sass */
+/* line 109, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview {
   position: absolute;
   top: 0;
@@ -143,7 +150,7 @@ input[type="radio"]:checked + .radio-button-detector {
   z-index: 60;
   display: none;
 }
-/* line 113, ../sass/new-promo.sass */
+/* line 119, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:after {
   transition: all 0.3s ease;
   content: "";
@@ -156,15 +163,15 @@ input[type="radio"]:checked + .radio-button-detector {
   left: 0;
   bottom: 0;
 }
-/* line 126, ../sass/new-promo.sass */
+/* line 132, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:hover:after {
   opacity: 1;
 }
-/* line 129, ../sass/new-promo.sass */
+/* line 135, ../sass/new-promo.sass */
 .photo-drop-area .photo-drop-area__file-preview:hover .delete-preview__icon {
   opacity: 1;
 }
-/* line 132, ../sass/new-promo.sass */
+/* line 138, ../sass/new-promo.sass */
 .photo-drop-area .delete-preview__icon {
   background: rgba(0, 0, 0, 0.5) url(../i/icon-trash.png) no-repeat center center;
   background-size: 17px auto;
@@ -181,7 +188,7 @@ input[type="radio"]:checked + .radio-button-detector {
   opacity: 0;
   transition: all 0.3s ease;
 }
-/* line 148, ../sass/new-promo.sass */
+/* line 154, ../sass/new-promo.sass */
 .photo-drop-area #inp-file, .photo-drop-area .file-input-js {
   position: absolute;
   opacity: 0;
@@ -193,7 +200,7 @@ input[type="radio"]:checked + .radio-button-detector {
   cursor: pointer;
 }
 
-/* line 158, ../sass/new-promo.sass */
+/* line 164, ../sass/new-promo.sass */
 .photo-icon {
   display: inline-block;
   vertical-align: middle;
@@ -204,14 +211,14 @@ input[type="radio"]:checked + .radio-button-detector {
   margin-bottom: 24px;
 }
 
-/* line 167, ../sass/new-promo.sass */
+/* line 173, ../sass/new-promo.sass */
 .upload-photo-big-text {
   font-size: 18px;
   color: #333333;
   margin: 0 0 10px;
 }
 
-/* line 172, ../sass/new-promo.sass */
+/* line 178, ../sass/new-promo.sass */
 .upload-photo-small-text {
   color: #333;
   font-size: 16px;
@@ -219,17 +226,17 @@ input[type="radio"]:checked + .radio-button-detector {
 }
 
 @media screen and (max-width: 468px) {
-  /* line 179, ../sass/new-promo.sass */
+  /* line 185, ../sass/new-promo.sass */
   .form-line {
     display: block;
   }
 
-  /* line 182, ../sass/new-promo.sass */
+  /* line 188, ../sass/new-promo.sass */
   .form-field__caption {
     margin-bottom: 10px;
   }
 
-  /* line 185, ../sass/new-promo.sass */
+  /* line 191, ../sass/new-promo.sass */
   .form-field {
     width: 100%;
   }

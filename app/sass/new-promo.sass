@@ -41,7 +41,7 @@
     font-size: 15px
     line-height: 38px
     padding: 0 15px
-    margin-right: 5px
+    margin: 3px 5px 3px 0
     display: inline-block
     
 .tal
@@ -76,7 +76,13 @@
     input.short-input
         width: 130px
         margin-right: 10px
-    
+
+.form-box input[type="text"], .form-box input[type="email"], textarea, .custom-select select
+    &:focus
+        border: 1px solid #b263b8
+        box-shadow: 0 0 6px 0 rgba(178, 99, 184, 0.5)
+        outline: none
+
     
 input[type="radio"]:checked 
     & + .radio-button-detector
